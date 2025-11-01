@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netflix - Questão de Tempo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar fixa no topo -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"><img class="logo-netflix" src="img/netflix-logo.png" alt="#"></div>
+      <ul class="nav-links">
+        <li><a href="#">Séries</a></li>
+        <li><a href="#">Filmes</a></li>
+        <li><a href="#">Minha Lista</a></li>
+      </ul>
+      <div class="nav-icons">
+        <button aria-label="Buscar" class="icon-btn search-btn">
+          <img src="img/lupa.png" alt="Buscar" />
+        </button>
+        <button aria-label="Notificações" class="icon-btn notif-btn">
+          <img src="img/sino.png" alt="Notificações" />
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Banner principal -->
+  <section class="banner">
+    <img
+      src="img/QUESTÃO DE TEMPO- PRINCIPAL.jpg"
+      alt="Questão de Tempo - Casal"
+      class="banner-img"
+    />
+    <div class="banner-content">
+
+      <p class="subtitle">
+        Enquanto para muitos o tempo é um problema, para esse casal ele é a solução.
+      </p>
+      <div class="buttons">
+        <button class="btn btn-watch" id="assistir">
+          <span class="play-icon">▶</span> Assistir
+        </button>
+        <button class="btn btn-info">Mais informações</button>
+      </div>
+    </div>
+  </section>
+
+  <div>
+      <img src="img/Degrade.png" alt="" class="degrade">
+  </div>
+
+  <!-- Seção filmes em alta -->
+  <main>
+
+    <section class="movie-section">
+      <h2>Em alta</h2>
+      <div class="movie-list">
+        <article class="movie-card">
+          <img
+            src="img/BARRA DO BEIJO.jpg"
+            alt="A Barraca do Beijo"
+            loading="lazy"
+          />
+        </article>
+        <article class="movie-card">
+          <img
+            src="img/Meu primeiro amor.jpg"
+            alt="Meu Primeiro Amor"
+            loading="lazy"
+          />
+        </article>
+        <article class="movie-card">
+          <img
+            src="img/enrolados poster.jpg"
+            alt="Enrolados"
+            loading="lazy"
+          />
+        </article>
+        <article class="movie-card">
+          <img
+            src="img/questão de tempo.jpg"
+            alt="Questão de Tempo"
+            loading="lazy"
+          />
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção continue vivendo -->
+    <section class="movie-section">
+      <h2>Continue vivendo</h2>
+      <div class="movie-list">
+        <article class="movie-card">
+          <img
+            src="img/para todos os garotos que ja amei.jpg"
+            alt="Para Todos os Garotos que Já Amei"
+            loading="lazy"
+          />
+        </article>
+        <article class="movie-card">
+          <img
+            src="img/como eu era antes de voce.jpg"
+            alt="Como Eu Era Antes de Você"
+            loading="lazy"
+          />
+        </article>
+        <article class="movie-card">
+          <img
+            src="img/como perder um homem em 10 dias.jpg"
+            alt="Como Perder um Homem em 10 Dias"
+            loading="lazy"
+          />
+        </article>
+        <article class="movie-card">
+          <img
+            src="img/o casamento dos meus sonhos.jpg"
+            alt="O Casamento dos Meus Sonhos"
+            loading="lazy"
+          />
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Scripts JS -->
+  <script src="script.js"></script>
+</body>
+
+<script>
+  document.getElementById("assistir").addEventListener("click", () => {
+    window.location.href = "video.html";
+  });
+</script>
+
+</html>
